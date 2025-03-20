@@ -14,30 +14,39 @@
     <meta content="software developer portfolio" name="description" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/main.css">
+
     <script src="https://kit.fontawesome.com/fb418ac2de.js" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
-    <script defer src="js/script.js"></script>
+    <script defer src="layout/js/script.js"></script>
     <title>Software Developer Portfolio</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
+
+    <!-- Reset browser styles -->
+    <link rel="stylesheet" href="layout/styles/reset.css">
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link href="album.css" rel="stylesheet">
+    <link rel="stylesheet" href="layout/styles/main.css">
 
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
 </head>
 
 <body>
 
-    <header>
+    <header id="header">
         <div class="collapse bg-dark" id="navbarHeader">
             <div class="container">
                 <div class="row">
@@ -58,18 +67,12 @@
                 </div>
             </div>
         </div>
-        <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="navbar box-shadow">
             <div class="container d-flex justify-content-between">
-                <a href="#" class="navbar-brand d-flex align-items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="mr-2">
-                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
-                        </path>
-                        <circle cx="12" cy="13" r="4"></circle>
-                    </svg>
-                    <strong>Album</strong>
-                </a>
+                <div id="logo">
+                    <h1><a href="">
+                            Software Developer</a></h1>
+                </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
                     aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -79,190 +82,449 @@
     </header>
 
     <main role="main">
-
-        <section class="jumbotron">
-            <div class="container">
-                <h1 class="jumbotron-heading">Software Developer Portfolio</h1>
-                <p class="lead text-muted">Something short and leading about the collection below—its contents, the
-                    creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it
-                    entirely.</p>
-                <p>
-                    <a href="#" class="btn btn-primary my-2">Main call to action</a>
-                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-                </p>
+        <section class="jumbotron bgd-img overlay parallax" style="background-image: url('/images/java-coding.png');">
+            <div id="banner" class="container">
+                <article>
+                    <h2 class="display-3">Software Developer Portfolio</h2>
+                    <p class="lead text-muted">Full-stack Java Development, SQL, Typescript.</p>
+                    <footer>
+                        <ul class="inline p-0 m-0">
+                            <li><a class="btn btn-primary" href="#">View Projects</a></li>
+                            <li><a class="btn inverse" href="#">View Services</a></li>
+                        </ul>
+                    </footer>
+                </article>
             </div>
         </section>
 
-
-        <div class="album py-5 bg-light">
-            <div class="container">
-                <ul class="row">
-                    <li class="col-md-4">
-                        <article class="card mb-4 box-shadow">
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </article>
+        <div class="row1">
+            <section id="ctdetails" class="container">
+                <ul class="row m-0 p-0 row-gap-3">
+                    <li class="col-lg-3">
+                        <div><a href="#"><i class="fas fa-phone"></i></a> <span><strong>Give us a
+                                    call:</strong>
+                                +00 (123) 456 7890</span></div>
                     </li>
-                    <li class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top"
-                                data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
+                    <li class="col-lg-3">
+                        <div><a href="#"><i class="fas fa-envelope"></i></a> <span><strong>Send us a
+                                    mail:</strong> support@domain.com</span></div>
                     </li>
-                    <li class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top"
-                                data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
+                    <li class="col-lg-3">
+                        <div><a href="#"><i class="fas fa-clock"></i></a> <span><strong> Mon. -
+                                    Sat.:</strong>
+                                08.00am - 18.00pm</span></div>
                     </li>
-
-                    <li class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top"
-                                data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
+                    <li class="col-lg-3">
+                        <div><a href="#"><i class="fas fa-map-marker-alt"></i></a> <span><strong>Come
+                                    visit
+                                    us:</strong> Directions to <a href="#">our location</a></span></div>
                     </li>
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top"
-                                data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top"
-                                data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top"
-                                data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top"
-                                data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top"
-                                data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </ul>
-            </div>
+            </section>
         </div>
 
+        <div class="wrapper bg-light">
+            <main>
+                <section id="services" class="container">
+                    <div class="text-black center mb-5">
+                        <p class="small">Mauris tempor aliquam venenatis</p>
+                        <h3 class="display-6">Services</h3>
+                    </div>
+                    <div class="album py-5">
+                        <ul class="row m-0 p-0 row-gap-4">
+                            <li class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                                <article class="card mb-4 box-shadow">
+                                    <div class="card-header px-5">
+                                        <a>
+                                            <i class="fa-solid fa-code"></i>
+                                        </a>
+                                        <h3 class="card-title bold">Bespoke Software Development</h3>
+                                    </div>
+                                    <div class="card-body px-5">
+                                        <p class="card-text">Our Bespoke Software Development service provides
+                                            unique and
+                                            efficient solutions
+                                            that
+                                            are customized
+                                            to your organization's specific needs and objectives. This ensures that
+                                            our
+                                            software
+                                            integrates
+                                            seamlessly with your existing processes.
+                                        </p>
+                                    </div>
+                                    <footer class="card-footer px-5"><a class="card-link" href="#">More Details
+                                            &raquo;</a>
+                                    </footer>
+                                </article>
+                            </li>
+                            <li class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                                <article class="card mb-4 box-shadow">
+                                    <div class="card-header px-5">
+                                        <a>
+                                            <i class="fa-solid fa-desktop"></i>
+                                        </a>
+                                        <h3 class="card-title bold">Desktop App Development</h3>
+                                    </div>
+                                    <div class="card-body px-5">
+                                        <p class="clip clip-5">We are experts in developing efficient and intuitive
+                                            desktop
+                                            applications that
+                                            enhance
+                                            user
+                                            satisfaction and productivity. Our custom-designed software solutions
+                                            integrate
+                                            seamlessly with your
+                                            existing workflow.
+                                        </p>
+                                    </div>
+                                    <footer class="card-footer px-5"><a href="#">More Details &raquo;</a></footer>
+                                </article>
+                            </li>
+                            <li class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                                <article class="card mb-4 box-shadow">
+                                    <div class="card-header px-5">
+                                        <a href="">
+                                            <i class="fa-solid fa-globe"></i>
+                                        </a>
+                                        <h3 class="card-title bold">Web Development</h3>
+                                    </div>
+                                    <div class="card-body px-5">
+                                        <p class="clip clip-5">Our web development services include the development
+                                            of
+                                            robust
+                                            and customized
+                                            backend solutions. Our team of experts can deliver high-performing
+                                            solutions to
+                                            meet
+                                            your specific
+                                            requirements, including database administration, server and API
+                                            development.
+                                        </p>
+                                    </div>
+                                    <footer class="card-footer px-5"><a href="#">More Details &raquo;</a></footer>
+                                </article>
+                            </li>
+                            <li class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                                <article class="card mb-4 box-shadow">
+                                    <div class="card-header px-5">
+                                        <a>
+                                            <i class="fa-solid fa-user-gear"></i>
+                                        </a>
+                                        <h3 class="card-title bold">Content Management Systems</h3>
+                                    </div>
+                                    <div class="card-body px-5">
+                                        <p class="clip clip-5">A software application or web-based platform used to
+                                            manage
+                                            digital content is
+                                            called
+                                            a content
+                                            management system (CMS). A CMS allows multiple users to create, edit,
+                                            and
+                                            publish
+                                            content from one
+                                            central interface or dashboard. The content within a CMS is usually
+                                            stored in a
+                                            database and then
+                                            displayed using a set of templates, most commonly for a website.
+                                        </p>
+                                    </div>
+                                    <footer class="card-footer px-5"><a href="#">More Details &raquo;</a></footer>
+                                </article>
+                            </li>
+                            <li class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                                <article class="card mb-4 box-shadow">
+                                    <a>
+                                        <i class="fa-solid fa-folder-open"></i>
+                                    </a>
+                                    <div class="card-body px-5">
+                                        <h3 class="heading">Document Management Systems</h3>
+                                        <p class="clip clip-5">Document management software (DMS) provides digital
+                                            solutions
+                                            for
+                                            organizations to
+                                            capture, store,
+                                            track and manage documents, allowing them to design and implement
+                                            dependable
+                                            business processes and
+                                            workflows.
+                                        </p>
+                                    </div>
+                                    <footer class="card-footer px-5"><a href="#">More Details &raquo;</a></footer>
+                                </article>
+                            </li>
+                            <li class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                                <article class="card mb-4 box-shadow">
+                                    <a href="">
+                                        <i class="fa-solid fa-database"></i>
+                                    </a>
+                                    <div class="card-body px-5">
+                                        <h3 class="heading">Database Administration</h3>
+                                        <p class="clip clip-5">Data management, understanding how to use relational
+                                            databases,
+                                            to model data, and
+                                            query it in
+                                            efficient ways, has been a real interest and a central concern of my
+                                            self-directed
+                                            learning. I have
+                                            taken
+                                            courses specifically in SQL, as well as courses which have used SQL as
+                                            part of a
+                                            stack of
+                                            technologies.
+                                        </p>
+                                    </div>
+                                    <footer class="card-footer px-5"><a href="#">More Details &raquo;</a></footer>
+                                </article>
+                            </li>
+                            <li class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                                <article class="card mb-4 box-shadow">
+                                    <a href="">
+                                        <i class="fa-solid fa-server"></i>
+                                    </a>
+                                    <div class="card-body px-5">
+                                        <h3 class="card-header">Server Administration</h3>
+                                        <p class="clip clip-5">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                            elit.
+                                            Lorem
+                                            ipsum dolor sit
+                                            amet
+                                            consectetur
+                                            adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <footer class="card-footer px-5"><a href="#">More Details &raquo;</a></footer>
+                                </article>
+                            </li>
+                            <li class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                                <article class="card mb-4 box-shadow">
+                                    <a href="">
+                                        <i class="fa-solid fa-palette"></i>
+                                    </a>
+                                    <div class="card-body px-5">
+                                        <h3 class="heading">Graphics Design</h3>
+                                        <p class="clip clip-5">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                            elit.
+                                            Lorem
+                                            ipsum dolor sit
+                                            amet
+                                            consectetur
+                                            adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <footer class="card-footer px-5"><a href="#">More Details &raquo;</a></footer>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
     </main>
+
+    <div class="bgded overlay">
+        <!-- <div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');"> -->
+        <section id="projects" class="hoc container clear">
+            <!-- ################################################################################################ -->
+            <div class="sectiontitle">
+                <p class="nospace font-xs">Nisi velit nec turpis nullam vitae</p>
+                <h6 class="heading">Web Development</h6>
+            </div>
+            <article id="points" class="group">
+                <div class="two_third first">
+                    <h6 class="heading">Art Gallery</h6>
+                    <p>Luctus mauris lectus elementum nulla ac consectetuer sapien leo et arcu sed tempus tempor orci
+                        vestibulum
+                        volutpat eleifend arcu nunc vitae lacus sit amet sem consequat ullamcorper vivamus quis risus ut
+                        turpis
+                        sagittis venenatis.</p>
+                    <p>Volutpat et aliquam sed magna duis nibh dui porttitor eu rhoncus ut convallis eu eros in
+                        condimentum
+                        placerat.</p>
+                    <ul class="nospace group">
+                        <li><span>1</span> Multiple gallery modes: masonry, grid, lightbox</li>
+                        <li><span>2</span> Local and cloud-based CDN image optimization</li>
+                        <li><span>3</span> Pixel-precise custom styling options</li>
+                        <li><span>4</span> Fine-tuned data schema design</li>
+                        <li><span>5</span> Portable database, full ownership of data, backup and restore processes</li>
+                        <li><span>6</span> Fast page loads with static site generation and server-side rendering</li>
+                        <li><span>7</span> Optimized SEO</li>
+                        <li><span>8</span> Content generation</li>
+                    </ul>
+                </div>
+                <div class="one_third last"><a class="imgover" href="#"><img src="images/grs_art_crop.PNG" alt=""></a>
+                </div>
+                <ul class="nospace">
+                    <li class="">
+                        <span class="badge badge-pill badge-info">
+                            <i class="devicon-docker-plain colored"></i>
+                            Docker</span>
+                    </li>
+                    <li>
+                        <i class="devicon-nginx-plain colored"></i>
+                        <span>Nginx</span>
+                    </li>
+                    <li>
+                        <i class="devicon-ubuntu-plain colored"></i>
+                        <span>Ubuntu</span>
+                    </li>
+                    <li>
+                        <i class="devicon-git-plain colored"></i>
+                        <span>Git</span>
+                    </li>
+                    <li>
+                        <i class="devicon-bitbucket-plain colored"></i>
+                        <span>Bitbucket</span>
+                    </li>
+                </ul>
+            </article>
+            <!-- ################################################################################################ -->
+        </section>
+    </div>
+
+
+
+    <div class="wrapper row5">
+        <section id="technologies" class="hoc container">
+            <div class="sectiontitle">
+                <p class="nospace font-xs">Nisi velit nec turpis nullam vitae</p>
+                <h6 class="heading">Technologies</h6>
+            </div>
+            <div id="tabs" class="nospace">
+                <ul>
+                    <li><a href="#tabs-1">Backend</a></li>
+                    <li><a href="#tabs-2">Frontend</a></li>
+                    <li><a href="#tabs-3">Database</a></li>
+                    <li><a href="#tabs-4">Dev Ops</a></li>
+                </ul>
+                <article id="tabs-1">
+                    <h3 class="heading-secondary">Backend</h3>
+                    <p>
+                        Our web development services include the development of robust and customized backend
+                        solutions. Our
+                        team
+                        of experts can deliver high-performing solutions to meet your specific requirements,
+                        including database
+                        administration, server-side logic and API development, in Java and Spring, C#, and Node JS.
+
+                    </p>
+                    <ul class="nospace">
+                        <li>
+                            <i class="devicon-java-plain colored"></i>
+                            <span>Java</span>
+                        </li>
+                        <li>
+                            <i class="devicon-spring-plain colored"></i>
+                            <span>Spring</span>
+                        </li>
+                        <li>
+                            <i class="devicon-csharp-plain colored"></i>
+                            <span>C#</span>
+                        </li>
+                        <li>
+                            <i class="devicon-nodejs-plain colored"></i>
+                            <span>Node</span>
+                        </li>
+                    </ul>
+                </article>
+                <article id="tabs-2">
+                    <h3 class="heading-secondary">Frontend</h3>
+                    <p>
+                        With reference to Frontend Web Development, I have also built two websites
+                        www.hrsgardens.co.uk
+                        and www.georgericesmith.co.uk, have built apps with many of the latest JavaScript tools
+                        (Astro, Vue,
+                        Next, Angular), Java frontend tools (Vaadin), and have undertaken training in self-hosting
+                        secure and
+                        optimized WordPress sites
+                        using custom themes and plugins built with PHP.
+                    </p>
+                    <ul class="nospace">
+                        <li>
+                            <i class="devicon-typescript-plain colored"></i>
+                            <span>Typescript</span>
+                        </li>
+                        <li>
+                            <i class="devicon-angular-plain colored"></i>
+                            <span>Angular</span>
+                        </li>
+                        <li>
+                            <i class="devicon-react-plain colored"></i>
+                            <span>React</span>
+                        </li>
+                        <li>
+                            <i class="devicon-vuejs-plain colored"></i>
+                            <span>Vue</span>
+                        </li>
+                        <li>
+                            <i class="devicon-css3-plain colored"></i>
+                            <span>CSS3</span>
+                        </li>
+                        <li>
+                            <i class="devicon-wordpress-plain colored"></i>
+                            <span>Wordpress</span>
+                        </li>
+                    </ul>
+                </article>
+                <article id="tabs-3">
+                    <h3 class="heading-secondary">Database</h3>
+                    <p>
+                        Our team selects the best database for your data needs to ensure optimal performance. We are
+                        experts in
+                        real-time data processing and can develop web applications using PostgreSQL and MongoDB,
+                        among others.
+                    </p>
+                    <ul class="nospace">
+                        <li>
+                            <i class="devicon-postgresql-plain colored"></i>
+                            <span>PostgreSQL</span>
+                        </li>
+                        <li>
+                            <i class="devicon-mysql-plain colored"></i>
+                            <span>MySQL</span>
+                        </li>
+                        <li>
+                            <i class="devicon-mongodb-plain colored"></i>
+                            <span>MongoDB</span>
+                        </li>
+                    </ul>
+                </article>
+                <article id="tabs-4">
+                    <h3 class="heading-secondary">DevOps</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo odit officiis dolorum,
+                        temporibus
+                        delectus tenetur nobis eligendi aspernatur. Ut, dolor ad. Placeat libero nemo rem quam atque
+                        cupiditate
+                        voluptates cum.
+                    </p>
+                    <ul class="nospace">
+                        <li>
+                            <i class="devicon-docker-plain colored"></i>
+                            <span>Docker</span>
+                        </li>
+                        <li>
+                            <i class="devicon-nginx-plain colored"></i>
+                            <span>Nginx</span>
+                        </li>
+                        <li>
+                            <i class="devicon-ubuntu-plain colored"></i>
+                            <span>Ubuntu</span>
+                        </li>
+                        <li>
+                            <i class="devicon-git-plain colored"></i>
+                            <span>Git</span>
+                        </li>
+                        <li>
+                            <i class="devicon-bitbucket-plain colored"></i>
+                            <span>Bitbucket</span>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+
+        </section>
+    </div>
 
     <footer class="text-muted">
         <div class="container">

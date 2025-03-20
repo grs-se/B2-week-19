@@ -248,9 +248,92 @@
 /* ========================================================================================================================================== */
 #services {
 }
+#services article {
+  border: 1px solid;
+  border-radius: 0;
+}
 
-#services > .heading {
-  /* color: #ffffff; */
+#services .card-header {
+  position: relative;
+  padding-top: 40px;
+}
+
+#services li article:hover {
+  cursor: pointer;
+}
+
+#services li article a i {
+  display: block;
+  position: absolute;
+  top: -25px;
+  right: var(--space-md);
+  width: 50px;
+  height: 50px;
+  line-height: 48px;
+  border: 1px solid;
+  border-radius: 3px;
+  font-size: 1.32rem;
+  text-align: center;
+}
+
+#services li article footer {
+  margin-top: 20px;
+}
+
+#services li article p {
+  align-self: flex-end;
+  margin-top: auto;
+  font-size: 16px;
+  /* position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem; */
+}
+
+#services article {
+  border: 1px solid;
+  border-radius: 0;
+}
+
+#services .card-header {
+  position: relative;
+  padding-top: 40px;
+}
+
+#services li article:hover {
+  cursor: pointer;
+}
+
+#services li article a i {
+  display: block;
+  position: absolute;
+  top: -25px;
+  right: var(--space-md);
+  width: 50px;
+  height: 50px;
+  line-height: 48px;
+  border: 1px solid;
+  border-radius: 3px;
+  font-size: 1.32rem;
+  text-align: center;
+}
+
+#services li article footer {
+  margin-top: 20px;
+}
+
+#services li article p {
+  align-self: flex-end;
+  margin-top: auto;
+  font-size: 16px;
+  /* position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem; */
+}
+/*  */
+
+/* #services > .heading {
   margin-bottom: 4rem;
 }
 
@@ -301,8 +384,6 @@
   border-radius: 3px;
   font-size: 1.32rem;
   text-align: center;
-  /* z-index intefers with mobile menu */
-  /* z-index: 1; */
   background-color: black;
   color: var(--color-secondary);
 }
@@ -311,11 +392,7 @@
   align-self: flex-end;
   margin-top: auto;
   font-size: 16px;
-  /* position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 1rem; */
-}
+} */
 
 @media screen and (max-width: 1536px) {
   #services-list {
