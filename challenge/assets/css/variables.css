@@ -1,0 +1,133 @@
+/* variables */
+/* ========================================================================================================================================== */
+:root {
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1536px;
+
+  --space-4xs: 0.125rem;
+  /* 2px */
+  --space-3xs: 0.25rem;
+  /* 4px */
+  --space-2xs: 0.5rem;
+  /* 8px */
+  --space-xs: 0.75rem;
+  /* 12px */
+  --space-sm: 1rem;
+  /* 16px */
+  --space-md: 1.5rem;
+  /* 24px */
+  --space-lg: 2.25rem;
+  /* 36px */
+  --space-xl: 3.5rem;
+  /* 56px */
+  --space-2xl: 5.75rem;
+  /* 92px */
+  --space-3xl: 9.25rem;
+  /* 148px */
+  --space-4xl: 15rem;
+  /* 240px */
+
+  --text-xs: 0.6875rem;
+  --text-sm: 0.8125rem;
+  --text-base: 1rem;
+  --text-md: 1.1875rem;
+  --text-lg: 1.4375rem;
+  --text-xl: 1.75rem;
+  --text-2xl: 2.0625rem;
+  --text-3xl: 2.5rem;
+  --text-4xl: 3rem;
+
+  /* --font-primary: "Lucida Sans Regular"; */
+  --font-primary: "Rubik", Verdana, sans-serif;
+  --font-primary-bold: "Lucida Sans Demibold Roman";
+  --font-secondary: "Rubik", Verdana, sans-serif;
+
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  --leading-default: 1rem;
+  --leading-sm: 1.05;
+  --leading-md: 1.2;
+  --leading-lg: 1.6;
+  --leading-xl: 1.8;
+
+  --tracking-tighter: -0.05em;
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.1em;
+
+  --color-blue-dark: #191e3e !important;
+  /* --color-blue-dark: #1b1f3b !important; */
+
+  --color-yellow: #f8c86e;
+  --color-yellow-light-1: #f5deb3;
+  --color-yellow-light-2: #ffefd2;
+  --color-yellow-dark: #ba9d67;
+
+  --color-orange: #080706;
+  --color-orange-light-1: #fdf2e9;
+  --color-orange-light-2: #fae5d3;
+  --color-orange-light-3: #eb984e;
+  --color-orange-dark: #cf711f;
+
+  --color-burnt-sienna: #81583a;
+
+  --color-red: #eb2f64;
+  --color-red-light: #ff3366;
+  --color-red-dark: #ba265d;
+
+  --color-green: #20b2aa;
+  --color-green-light-1: #bcf3f0;
+  --color-green-light-2: #91dbd7;
+  --color-green-dark: #268783;
+
+  --color-blue-light-1: #c9e6f6;
+  --color-blue-light-1: #a4d6eb;
+  --color-green-blue-1: #01546b;
+
+  --color-green-yellow: #676348;
+  --color-green-yellow-light-1: #d0cdbc;
+  --color-green-grey: #6b7463;
+  --color-green-grey-2: #6f7365;
+  --color-green-grey-dark-1: #53564c;
+
+  --color-white: #ffffff;
+  --color-dark-1: rgba(0, 0, 0, 0.8);
+
+  --color-grey-light-1: #eef2f6;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #555;
+  --color-grey-dark-3: #777;
+  --color-grey-dark-4: #999;
+
+  --color-primary: var(--color-orange);
+  --color-primary-dark: var(--color-orange-dark);
+
+  --color-secondary: var(--color-green);
+  --color-secondary-dark: var(--color-green-dark);
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  --border-radius-xs: 3px;
+  --border-radius-sm: 5px;
+  --border-radius-md: 9px;
+  --border-radius-lg: 11px;
+
+  --border-line: 1px solid var(--color-grey-light-2);
+  --border-line-dark: 1px solid var(--color-grey-dark-1);
+}
