@@ -1,0 +1,20 @@
+.ui-tabs .ui-tabs-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.ui-tabs .ui-tabs-nav li {
+  width: 25%;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  border: 1px solid #075c5f;
+  background: #075c5f;
+  font-weight: normal;
+  color: #ffffff;
+}

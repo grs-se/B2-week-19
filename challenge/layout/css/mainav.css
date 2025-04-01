@@ -1,0 +1,127 @@
+#header #logo a {
+  font-variant: small-caps;
+  letter-spacing: 0.4px;
+}
+
+#main-nav ul {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-sm);
+}
+
+#main-nav li {
+  display: inline-block;
+  font-size: var(--text-md);
+  font-weight: var(--font-bold);
+  padding: 0 var(--space-xs);
+}
+
+#main-nav a {
+  color: #ffffff;
+}
+
+#main-nav li:link,
+#main-nav li:visited {
+  transition: all 0.3s;
+}
+
+#main-nav li:hover a,
+#main-nav li:active a {
+  color: #cf711f !important;
+}
+
+#btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 3rem;
+  width: 3rem;
+  color: #10e0e7;
+  /* color: var(--color-orange); */
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* sticky navigation */
+.sticky #header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  /* box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03); */
+}
+
+.sticky .banner-primary {
+  margin-top: 9.6rem;
+}
+
+@media screen and (max-width: 950px) {
+  #header {
+    padding: 16px 32px;
+  }
+  #btn-mobile-nav {
+    display: block;
+    z-index: 3;
+  }
+
+  #main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open #main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open #main-nav a {
+    color: #000;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  #main-nav ul {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  #main-nav li:link,
+  #main-nav li:visited {
+    font-size: 3rem;
+  }
+}

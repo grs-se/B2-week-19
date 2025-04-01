@@ -1,120 +1,68 @@
-# Migrating a Site with Custom Fonts, jQuery, and jQuery Widgets
+# Build a Multi-page Responsive Website
 
 ## Challenge
 
-In this challenge, you will take one of your existing projects (either from Week 11 or Week 12) and enhance it by incorporating **custom fonts, jQuery functionalities, and jQuery UI Widgets**. Additionally, you will ensure the site is responsive and visually appealing using Bootstrap. The final project should be deployed using **GitHub Pages** for accessibility.
+Using the wireframe you created as your first exercise, develop it into a fully functioning, multi-page website. The website should showcase the following techniques you've learned this week:
+
+1. **Flexbox** for layout structure.
+2. **Flexbox alignment** to position elements.
+3. At least **one pseudo-element or pseudo-class**.
+4. Use of **CSS variables** for consistent styling (e.g., colors, borders).
+5. A **contact page** with a styled contact form.
+
+Your site should include multiple pages (e.g., Home, About, Services, Contact) and must be fully responsive, adapting to various screen sizes and devices.
 
 ## Key Learnings
 
 By completing this exercise, you will:
 
-- Gain hands-on experience in using **custom web fonts** for styling and branding.
-- Learn how to integrate **jQuery** for dynamic interactions.
-- Explore **jQuery UI Widgets** to enhance user experience.
-- Utilize Bootstrap’s grid system and components for a **clean and responsive design**.
-- Deploy a fully functional project using **GitHub Pages**.
+- Gain hands-on experience building and laying out a real, responsive website.
+- Understand how to use **Flexbox** for modern page layouts.
+- Learn how to apply **CSS variables** for consistent theming across your website.
+- Practice integrating **pseudo-elements or pseudo-classes** for dynamic or decorative styling.
+- Learn how to build and style a functional **contact form**.
 
 ## User Story
 
-As a developer, I want to enhance my existing website by integrating custom fonts, jQuery, and jQuery UI Widgets so that I can improve both the visual appeal and user experience while keeping the site maintainable and responsive.
+As a web developer, I want to create a multi-page, responsive website that uses modern layout techniques like Flexbox, CSS variables, and pseudo-elements so that I can build a flexible, maintainable website that adapts to various screen sizes and devices.
 
 ## Acceptance Criteria
 
-- Take an existing site from Week 11 or Week 12 and **apply custom fonts** (Google Fonts or locally hosted fonts).
-- Integrate **jQuery functionalities** to add interactive elements such as animations, event listeners, or AJAX requests.
-- Use **at least two jQuery UI Widgets**, such as Accordions, Datepickers, or Dialogs, to enhance usability.
-- Maintain a **clean and responsive layout** using Bootstrap’s grid system.
-- Replace at least **three UI elements** with Bootstrap components (e.g., Navbar, Cards, Modals, Forms).
-- Deploy the final site using **GitHub Pages** and ensure it works across different screen sizes.
+1. **Structure and Layout:**
 
-## Getting Started
+   - Use **Flexbox** to structure the layout of your pages.
+   - Properly utilize **flexbox alignment** to ensure items are well-positioned within their containers.
+   - Ensure the layout is **responsive**, adapting to different screen sizes (desktop, tablet, mobile).
 
-### 1. Choose an Existing Site
-   - Select a project from Week 11 or Week 12 that you will improve with the required features.
+2. **Styling:**
+   - Include at least one **pseudo-element or pseudo-class** in your styling (e.g., `:hover`, `:before`, `:after`).
+   - Use **CSS variables** for managing consistent color schemes, and optionally for other properties like borders and spacing.
+3. **Multi-page Navigation:**
 
-### 2. Add Bootstrap and jQuery
-   - Include Bootstrap and jQuery in your HTML file inside the `<head>` section:
-     ```html
-     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" />
-     ```
+   - Your website should contain more than one page (e.g., Home, About, Services, Contact).
+   - Each page should be well-structured and follow a cohesive design.
+   - Include a **navigation bar** that links to the different pages.
 
-### 3. Implement Custom Fonts
-   - Use Google Fonts by adding this inside `<head>`:
-     ```html
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-     ```
-   - Apply the font in your CSS:
-     ```css
-     body {
-       font-family: 'Poppins', sans-serif;
-     }
-     ```
+4. **Contact Page:**
+   - Create a **contact form** on the Contact page with styled inputs for name, email, message, and a submit button.
+   - Ensure the contact form is styled properly and provides a good user experience on both desktop and mobile devices.
+5. **Code Quality:**
+   - Use clean, well-commented, and formatted HTML and CSS.
+   - Ensure your website is **accessible**, using semantic HTML tags where appropriate (`<header>`, `<main>`, `<section>`, `<footer>`, etc.).
 
-### 4. Add jQuery Functionalities
-   - Example: Fade in/out effect for a section
-     ```html
-     <button id="toggleSection">Toggle Section</button>
-     <div id="content" style="display:none;">This is a hidden section.</div>
-     <script>
-       $(document).ready(function() {
-         $('#toggleSection').click(function() {
-           $('#content').fadeToggle();
-         });
-       });
-     </script>
-     ```
+## Example Flow
 
-### 5. Integrate jQuery UI Widgets
-   - Example: Adding a Datepicker to a form input
-     ```html
-     <label for="date">Select a date:</label>
-     <input type="text" id="date" />
-     <script>
-       $(function() {
-         $('#date').datepicker();
-       });
-     </script>
-     ```
+1. **Step 1**: Start by reviewing the wireframe you created in the first exercise.
+2. **Step 2**: Set up your project folder and create multiple HTML pages (e.g., index.html, about.html, contact.html).
+3. **Step 3**: Implement your layout using **Flexbox**. Apply flexbox alignment techniques to position elements as needed.
+4. **Step 4**: Use **CSS variables** to handle consistent color schemes and optionally other properties like borders and spacing.
+5. **Step 5**: Style your contact page with a **contact form** and ensure it adapts well to different screen sizes.
+6. **Step 6**: Incorporate **pseudo-elements or pseudo-classes** into your styling for interactive or decorative effects.
+7. **Step 7**: Test your website on different devices and screen sizes to ensure it is fully responsive.
 
-### 6. Use Bootstrap Components
-   - Example: Replace a simple navigation bar with Bootstrap's Navbar
-     ```html
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-       <a class="navbar-brand" href="#">My Site</a>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-         <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse" id="navbarNav">
-         <ul class="navbar-nav">
-           <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-           <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-         </ul>
-       </div>
-     </nav>
-     ```
+## Resources
 
-### 7. Deploy the Site
-   - Push your project to GitHub and enable **GitHub Pages** for deployment.
-   - Ensure the site is fully functional and accessible online.
-
-## Example Website
-
-For reference, check out this example website that follows the challenge requirements:
-- **Demo:** [https://example-bootstrap-jquery.github.io](https://example-bootstrap-jquery.github.io)
-- **GitHub Repo:** [https://github.com/example-bootstrap-jquery](https://github.com/example-bootstrap-jquery)
-
-## Submission
-
-Once your site has been enhanced and deployed, submit the following:
-- The **GitHub Repository** link.
-- The **GitHub Pages** deployed site link.
-
-## Additional Resources
-
-- [Google Fonts](https://fonts.google.com/)
-- [jQuery UI Widgets](https://api.jqueryui.com/category/widgets/)
-- [Bootstrap Components](https://getbootstrap.com/docs/4.5/components/)
-- [GitHub Pages Guide](https://docs.github.com/en/pages/getting-started-with-github-pages)
+- [CSS Tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [MDN Web Docs: Pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
+- [MDN Web Docs: CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+- [MDN Web Docs: Responsive Web Design Basics](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
