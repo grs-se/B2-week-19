@@ -12,8 +12,9 @@
   --bs-white: #fff;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
-  --bs-primary: #075c5f !important;
-  --bs-primary-rgb: 7, 92, 95;
+  --bs-primary: rgb(150, 123, 105) !important;
+  /* --bs-primary-rgb: 7, 92, 95; */
+  --bs-primary-rgb: 150, 125, 105;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;

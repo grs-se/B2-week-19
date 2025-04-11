@@ -53,8 +53,9 @@
   font-weight: normal;
 }
 
-@media screen and (max-width: 1536px) {
-  #banner-primary {
+@media screen and (min-width: 750px) {
+  #banner-primary,
+  .banner-secondary {
     padding: 200px 0;
   }
 }
@@ -87,6 +88,11 @@
 
 #services article p {
   margin-bottom: var(--space-lg);
+}
+
+#services article i {
+  background-color: white;
+  color: var(--color-secondary);
 }
 
 /* technologies */
@@ -423,7 +429,7 @@ td {
   background: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  flex-wrapper: wrapper;
+  flex-wrap: wrap;
   gap: 50px;
   padding: 40px;
 }
@@ -617,48 +623,4 @@ textarea.form-control {
 
 .year {
   font-weight: bold;
-}
-
-/* colours
-========================================================================================================================================== */
-/* rows
-========================================================================================================================================== */
-.row-1 {
-  background-color: #075c5f;
-}
-
-.row-2 {
-  background-color: #075c5f;
-}
-
-.row-3 {
-}
-
-.row-4 {
-  background-color: var(--color-green-grey-dark-1);
-  background-color: #075c5f;
-}
-
-.row-5 {
-  background: var(--color-grey-light-1);
-}
-
-.row-6 {
-  background: #f4f4f4;
-}
-
-.row-7 {
-  background: #ffffff;
-}
-
-.row-8 {
-  background: #222;
-}
-.row-9 {
-  background: #111;
-}
-
-#services article i {
-  background-color: white;
-  color: var(--color-secondary);
 }
